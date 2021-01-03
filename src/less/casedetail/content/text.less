@@ -1,0 +1,153 @@
+.text_div {
+  width: 70%;
+  float: left;
+  margin-top: 5px;
+  padding-top: 32px;
+  height: 770px;
+  overflow-y: scroll;
+
+  .law_title,.essay_title {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    img {
+      margin: 8px 14px 0 20px;
+      float: left;
+    }
+    div {
+      font: 20px '微软雅黑';
+      color: #333333;
+      float: left;
+      line-height: 40px;
+    }
+    >a {
+      float: right;
+      line-height: 40px;
+      margin-right: 15px;
+    }
+  }
+
+  .law_div {
+    margin-bottom: 26px;
+    background-color: #ffffff;
+    padding: 10px 0 24px 37px; //法条
+    #law-referenced {
+      list-style: none;
+      &>li {
+        position: relative;
+        margin: 15px 0 0 0;
+        height: 30px;
+        &>label {
+          background: url(../../../assets/casedetail/circle_normal.png) no-repeat left center;
+          height: 26px;
+          width: 16px;
+          margin: 0;
+          float: left;
+          input {
+            display: none;
+          }
+        }
+        &>a {
+          float: left;
+          vertical-align: bottom;
+          font-size: 18px;
+          color: #535353;
+          line-height: 26px;
+        }
+        &>div {
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 5px;
+          width: 850px;
+          padding-top: 18px;
+          background: white url(../../../assets/casedetail/case_bar.png) no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+          z-index: 5;
+          .title {
+            color: #108596;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+          }
+          .content {
+            color: black;
+            font-size: 16px;
+            line-height: 26px;
+          }
+          &>div {
+            padding: 17px 40px 25px 25px;
+            border: 1px solid #c7c7c7;
+            border-top: none;
+            box-shadow: 2px 2px 5px #c7c7c7;
+          }
+        }
+        &:hover {
+          &>div {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .essay_div {
+    background-color: #ffffff;
+    padding-top: 15px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .option {
+        width: 183px;
+        height: 30px;
+        margin: 15px 22px;
+        select {
+          width: 183px;
+          height: 33px;
+          color: #535353;
+          font-size: 16px;
+          background-color: #F3F4F6;
+        }
+      }
+    }
+    .para_title {
+      height: 31px;
+      width: 160px;
+      margin: 18px 0 10px 26px;
+      .title {
+        width: 156px;
+        height: 31px;
+        font: 18px '微软雅黑';
+        color: #111111;
+        text-align: center;
+        line-height: 31px;
+        background: url(../../../assets/casedetail/content_bar.png) no-repeat;
+      }
+    }
+    .para {
+      width: 90%;
+      margin-left: 24px;
+      text-indent: 2em;
+      font: 16px '微软雅黑';
+      color: #333333;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      .sentenceTag {
+        border-bottom: solid 2px #60BBC8;
+      }
+      .wordTag {
+        color: #FF0707;
+      }
+      .keyword {
+        background-color: bisque;
+      }
+    }
+    .separator {
+      width: 100%;
+      height: 26px;
+      background: url(../../../assets/casedetail/separator.png) no-repeat;
+    }
+  }
+}

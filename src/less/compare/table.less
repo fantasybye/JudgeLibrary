@@ -1,0 +1,69 @@
+.compare_loading{
+  height: 644px;
+  width: 700px;
+  font-size: 50px;
+  margin: 0 auto;
+  padding-left: 275px;
+  padding-top: 150px;
+}
+.compare_div{
+  margin: 0 auto;
+  padding-top: 20px;
+  .info{
+    width: 100%;
+    height: 220px;float: left;padding-left: 230px;
+    table{
+      font: 15px '微软雅黑';
+      color: #333333;
+      float: left;
+      text-align: center;
+      width: 230px;
+      height: 220px;
+      .portrait{
+        width: 70px;
+        height: 92px;
+      }
+      .name{
+        font: 18px '微软雅黑';
+      }
+    }
+  }
+  .data{
+    width: 100%;
+    float: left;
+
+    table{
+      width: 230px;float: left;
+      td{
+        text-align: center;
+        height: 45px;
+        font: 16px '微软雅黑';
+        color: #333333;
+      }
+      tr:nth-child(odd){
+        background-color: #FFFFFF;
+      }
+      tr:nth-child(even){
+        background-color: #F6F8FA;
+      }
+      &.judge{
+        border-left: none;
+      }
+      &.title{
+        width: 210px;
+        margin-left: 20px;
+        .total_item{
+          text-align: center;
+          .front_img{
+            margin-right: 8px;
+            position: relative;
+            top: 2.5px;
+          }
+          .arrow{
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

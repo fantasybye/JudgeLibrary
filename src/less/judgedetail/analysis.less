@@ -1,0 +1,302 @@
+.analysis_div {
+  height: 454px;
+  width: 770px;
+  margin-top: 20px;
+  float: left;
+  border: solid 1px #EDEDED;box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  >.charts_navigate{//竖直导航按钮，1级导航
+    height: 414px;width: 186px;float: left;
+    .navi{
+      width: 151px;height: 56px;margin-top: 31px;margin-left: -9px;cursor: pointer;
+      background: url(../../assets/judgedetail/analysis/title_normal.png) no-repeat;
+      &.choosed{
+        background: url(../../assets/judgedetail/analysis/title_choose.png) no-repeat;
+      }
+      &.whole,&.good_at,&.demurrer_strength,&.different_status{
+        font: 16px 'SimHei';color: #FFFFFF;padding: 20px 10px 0 9px;line-height: 20px;
+      }
+      &.complex{
+        font: 16px 'SimHei';color: #FFFFFF;padding: 20px 10px 0 9px;line-height: 20px;
+      }
+    }
+  }
+  >.charts{//竖直导航区，1级导航
+    width: 580px;height: 414px;float: left;
+    &.navi_whole{//综合分析·图表
+      .chart_navi{//水平导航按钮，2级导航
+        width: 580px;height: 70px;float: left;
+        padding-top: 32px;
+        .vertical_navi{
+          width: 137px;height: 38px;font: 16px '微软雅黑';color: #333333;
+          float: left;cursor: pointer;padding-left: 44px;padding-top: 3px;
+          &.case_amount.choosed{background: url(../../assets/judgedetail/analysis/icon_amount_choose.png) no-repeat;}//办案数量-选中状态
+          &.case_amount{background: url(../../assets/judgedetail/analysis/icon_amount_normal.png) no-repeat;}//未选择
+          &.case_time.choosed{background: url(../../assets/judgedetail/analysis/icon_reason_choose.png) no-repeat;}//办案时长-选中状态
+          &.case_time{background: url(../../assets/judgedetail/analysis/icon_reason_normal.png) no-repeat;}//未选择
+          &.doc_amount.choosed{background: url(../../assets/judgedetail/analysis/icon_article_choose.png) no-repeat;}//文书数量-选中状态
+          &.doc_amount{background: url(../../assets/judgedetail/analysis/icon_article_normal.png) no-repeat;}//未选择
+          &.doc_word_count.choosed{background: url(../../assets/judgedetail/analysis/icon_number_choose.png) no-repeat;}//文书字数-选中状态
+          &.doc_word_count{background: url(../../assets/judgedetail/analysis/icon_number_normal.png) no-repeat;}//未选择
+        }
+      }
+      .little_chart{//水平导航区，2级导航
+        width: 580px;height: 340px;float: left;
+        &.navi_case_amount{//办案数量·图表
+          >.total{
+            height: 70px;
+            font: 16px '微软雅黑';
+            color: #333333;
+            padding-left: 25px;
+            padding-top: 2px;
+            >.case_total{
+              font: 36px '微软雅黑';color: #7DB362;margin-left: 10px;margin-right: 10px;
+            }
+
+            >.case_status{
+              padding-top: 15px;
+              >.middle{
+                margin: 0 15px;
+              }
+              .status_count {
+                font: 18px 'Microsoft YaHei';
+                color: #7DB362;
+                /* margin-left: 20px; */
+                margin: 0 5px;
+              }
+            }
+          }
+          >.chart_navi{//3级导航
+            height: 64px;
+            padding-top: 48px;
+            padding-left: 8px;
+            font: 16px '微软雅黑';
+            line-height: 16px;
+            color: #333333;
+            >span{
+              cursor: pointer;
+              .choose_span{opacity: 0;}
+              &.choosed .choose_span{color: #7DB362;margin: 0 5px 0 5px;opacity: 1;}
+            }
+          }
+          >.main_chart{
+            height: 205px;width: 100%;float: left;
+            #trend_chart{height: 100%;width: 100%;}//历年趋势
+            .hear div{//一审、二审、再审、撤诉
+              width: 319px;height: 141px;margin: 35px 0 0 100px;
+              background: url(../../assets/judgedetail/analysis/little_frame.png) no-repeat;
+              font: 16px '微软雅黑';color: #7F7F7F;
+              text-align: center;padding-top: 30px;
+              .proceeding_text{font: 60px '微软雅黑';color: #7DB362;}
+            }
+          }
+        }
+        &.navi_case_time,&.navi_doc_word_count, &.navi_doc_amount{//说理长度  //文书字数·图表
+          font: 16px '微软雅黑';color: #333333;
+          >.total{
+            height: 70px;font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 25px;
+            >.case_total{
+              font: 36px '微软雅黑';color: #7DB362;margin-left: 20px;margin-right: 10px;
+            }
+          }
+        }
+        &.navi_doc_amount{//文书数量·图表
+          >.doc_chart_navi{//3级导航
+            height: 64px;
+            padding-top: 48px;
+            padding-left: 8px;
+            font: 16px '微软雅黑';
+            line-height: 16px;
+            color: #333333;
+            >span{
+              cursor: pointer;
+              .choose_span{opacity: 0;}
+              &.choosed .choose_span{color: #7DB362;opacity: 1;}
+            }
+          }
+          >.main_chart{
+            height: 205px;width: 100%;float: left;
+            .hear {//一审、二审、再审、撤诉
+              width: 319px;height: 141px;margin: 35px 0 0 100px;
+              background: url(../../assets/judgedetail/analysis/little_frame.png) no-repeat;
+              font: 16px '微软雅黑';color: #7F7F7F;
+              text-align: center;padding-top: 30px;
+              .doctype_text{font: 60px '微软雅黑';color: #7DB362;}
+            }
+          }
+        }
+      }
+    }
+    &.navi_different_status{//不同身份办案统计·图表
+      padding: 21px 10px 0 0;
+    }
+    &.navi_good_at{//擅长案由·图表
+      .good_at{
+        height: 137px;width: 562px;margin-top: 28px;
+        background: url(../../assets/judgedetail/analysis/frame.png) no-repeat;
+        >.case_cause{
+          padding: 20px 0 0 34px;font: 24px '微软雅黑';color: #535353;
+        }
+        >.good_at_total{
+          height: 70px;font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 10px;
+          .case_total{font: 42px '微软雅黑';color: #7DB362;margin-left: 100px;margin-right: 10px;}
+        }
+      }
+      table{
+        border-collapse: collapse;width: 550px;margin-top: 10px;text-align: center;font: 16px '微软雅黑';color: #111111;
+        .list_text{font: 18px '微软雅黑';color: #7DB362;}
+        tr{
+          height: 49px;
+          border-bottom: solid 2px #E3E3E3;
+        }
+        td:nth-child(1){width: 400px;word-break: break-all; word-wrap: break-word;}
+        td:nth-child(2){width: 70px;}
+        td:nth-child(4){width: 70px;}
+        td:nth-child(3),td:nth-child(5){width: 5px;font: 18px '微软雅黑';color: #E3E3E3;}
+      }
+    }
+    //案件权重分析
+    &.navi_complex{
+      .chart_navi{//水平导航按钮，2级导航
+        width: 580px;height: 70px;//border: solid 1px brown;
+        padding-top: 32px;padding-left: 10px;
+        .vertical_complex_navi{
+          width: 137px;height: 38px;font: 16px '微软雅黑';color: #333333;//border: solid 1px forestgreen;
+          float: left;cursor: pointer;padding-left: 34px;padding-top: 3px;
+          &.whole_complex.chosen{background: url(../../assets/judgedetail/analysis/whole_complex_choosed.png) no-repeat;}//总体权重-选中状态
+          &.whole_complex.normal{background: url(../../assets/judgedetail/analysis/whole_complex.png) no-repeat;}//未选择
+          &.dispute_focus.chosen{background: url(../../assets/judgedetail/analysis/dispute_focus_choosed.png) no-repeat;}//争议焦点-选中状态
+          &.dispute_focus.normal{background: url(../../assets/judgedetail/analysis/dispute_focus.png) no-repeat;}//未选择
+          &.demurrer_strength.chosen{background: url(../../assets/judgedetail/analysis/demurrer_strength_choosed.png) no-repeat;}//抗辩强度-选中状态
+          &.demurrer_strength.normal{background: url(../../assets/judgedetail/analysis/demurrer_strength.png) no-repeat;}//未选择
+          &.judicial_proceeding.chosen{background: url(../../assets/judgedetail/analysis/judicial_proceeding_choosed.png) no-repeat;}//诉讼程序-选中状态
+          &.judicial_proceeding.normal{background: url(../../assets/judgedetail/analysis/judicial_proceeding.png) no-repeat;}//未选择
+        }
+      }
+      .little_chart_complex{
+        width: 580px;height: 344px;
+        &.navi_whole_complex{//总体权重
+          .total{
+            font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 20px;
+            .avg_num_span{font: 36px '微软雅黑';color: #7DB362;margin-left: 10px;margin-right: 30px;&.down{color: #ED3219;}}
+          }
+          .max{
+            font: 16px '微软雅黑';color: #333333;padding: 25px 0 15px 15px; //border: solid 1px skyblue;
+            >.num{font: 24px '微软雅黑';color: #7DB362;margin-left: 10px;}
+          }
+          .essay{
+            .case_weight_essay_title{
+              font: 14px '微软雅黑';
+              color: #111111;
+              padding-left: 20px;
+              margin-top: 15px;
+              font-weight: bold;
+              a{
+                color: #000;
+                &:hover{
+                  color: #7DB362;
+                }
+              }
+            }
+            .description{font: 14px '微软雅黑';color: #535353;padding-left: 20px;margin-top: 12px;width: 540px;text-indent: 2em;}
+            .case_weight_essay_time{font: 12px '微软雅黑';color: #535353;padding-left: 20px;margin-top: 12px;}
+          }
+        }
+        &.navi_dispute_focus{//争议焦点
+          .total{
+            font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 20px;//border: solid 1px skyblue;
+            >img{padding-bottom: 15px;margin: 0;}
+            .focus_num_span{font: 36px '微软雅黑';color: #7DB362;margin-left: 10px;margin-right: 85px;}
+          }
+          .avg_title{font: 16px '微软雅黑';color: #333333;padding-left: 15px;padding-top: 48px;}
+          .avg{
+            width: 319px;height: 141px;margin: 26px 0 0 100px;
+            background: url(../../assets/judgedetail/analysis/little_frame.png) no-repeat;
+            font: 16px '微软雅黑';color: #7F7F7F;
+            text-align: center;padding-top: 30px;
+            .focus_num_span{font: 60px '微软雅黑';color: #7DB362;}
+          }
+        }
+        &.navi_demurrer_strength{//抗辩强度
+
+          .demurrer_strength_title{
+            font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 20px;
+            .question_img{
+              width: 22px;height: 22px;
+              display: inline-block;cursor: default;
+              margin-right: 5px;
+              position: relative;  top: 5px;
+              background: url(../../assets/judgedetail/cases/case_question.png) no-repeat;
+            }
+            .show_explanation {
+              width: 296px;
+              height: 205px;
+              position: absolute;
+              margin-left: -190px;
+              margin-top: 5px;
+              display: none;
+              z-index: 10;
+              background: url(../../assets/judgedetail/analysis/question_border.png) no-repeat;
+              .strength_description {
+                font: 16px '微软雅黑';
+                color: #333333;
+                width: 257px;
+                height: 73px;
+                margin-left: 17px;
+                margin-top: 30px;
+                line-height: 25px;
+                label {
+                  font: 16px '微软雅黑';
+                  color: #7DB362;
+                }
+              }
+            }
+            &:hover{
+              .show_explanation{
+                display: block;
+                z-index: 999;
+              }
+            }
+          }
+          .data{
+            width: 319px;height: 141px;margin: 26px 0 0 100px;
+            background: url(../../assets/judgedetail/analysis/little_frame.png) no-repeat;
+            font: 16px '微软雅黑';color: #7F7F7F;
+            text-align: center;padding-top: 30px;
+            span{font: 60px '微软雅黑';color: #7DB362;}
+          }
+          .compare{
+            font: 16px '微软雅黑';color: #333333;padding-left: 20px;padding-top: 20px;//border: solid 1px skyblue;
+            >img{margin: 0;}
+            .compare_num_span{font: 36px '微软雅黑';color: #7DB362;margin-left: 10px;margin-right: 10px;&.down{color: #ED3219;}}
+          }
+        }
+        &.navi_judicial_proceeding{width: 540px;}//诉讼程序
+      }
+    }
+  }
+  >.warning{
+    width: 768px;height: 38px;font: 16px '微软雅黑';color: #535353;
+    background-color: #FAFAFA;float: left;padding-left: 50px;
+    >.option{font: 16px '微软雅黑';color: #000000;margin: 0 5px 0 5px;text-decoration: underline;}
+  }
+}
+#case_chart {
+  height: 200px;
+  width: 530px;
+  margin-left: 10px;
+}
+#reason_chart {
+  height:220px;
+  width: 550px;
+  margin-left: -10px;
+}
+#doc_chart  {
+  height:220px;
+  width: 550px;
+  margin-left: -10px;
+}
+#wenshu_chart {
+  height: 200px;
+  width: 530px;
+  margin-left: 10px;
+}

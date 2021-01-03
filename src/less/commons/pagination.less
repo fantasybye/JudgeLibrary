@@ -1,0 +1,45 @@
+.page-bar ul{
+  font-size: 12px;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+.page-bar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.page-bar a {
+  border: 1px solid #ddd;
+  text-decoration: none;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #5EA83B;
+  cursor: pointer;
+  &:hover{
+    background-color: #eee;
+  }
+}
+.active a{
+  color: #fff;
+  cursor: default;
+  background-color: #5EA83B;
+  border-color: #5EA83B;
+}
+.option_before{
+  margin-right: 3px;
+}
+.option_after{
+  margin-left: 3px;
+}
+.page-bar i {
+  font-style:normal;
+  color: #5EA83B;
+  margin: 0 4px;
+  font-size: 12px;
+}

@@ -1,0 +1,153 @@
+.case_complex_tabs_div{
+  width: 1100px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  white-space: nowrap;
+  zoom: 1;
+  .case_complex_tabs_wrapper{
+    overflow: hidden;
+    margin-bottom: -1px;
+    .case_complex_tabs{
+      list-style: none;
+      box-sizing: border-box;
+      padding-left: 0;
+      left: 0;
+      -webkit-transition: left .5s cubic-bezier(.645,.045,.355,1);
+      transition: left .5s cubic-bezier(.645,.045,.355,1);
+      position: relative;
+      margin: 0;
+      float: left;
+      .case_complex_tab {
+        float: left;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        .case_complex_tab_inner{
+          background-color: #f5f5f5;
+          color: #e9a455;
+          padding: 8px 20px;
+          -webkit-transition: color .3s cubic-bezier(.645,.045,.355,1);
+          transition: color .3s cubic-bezier(.645,.045,.355,1);
+          display: block;
+          cursor: pointer;
+          text-decoration: none;
+          &.active{
+            background-color: #e9a455;
+            color: #fff;
+          }
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.score{
+  vertical-align: middle;
+  .innerTableDiv {
+    float: left;
+    margin: 0 42.5px;
+    .innerTable {
+      float: left;
+      margin: 0 auto;
+      border-bottom: solid 1px #ccc;
+      tbody {
+        vertical-align: middle;
+        td {
+          border-left: solid 1px #ccc;
+          border-top: solid 1px #ccc;
+          width: 220px;
+          height: 50px;
+          text-align: center;
+          font: 16px '微软雅黑';
+          color: #333333;
+          .weightSpan{
+            display: inline-block;
+            margin-left: 5px;
+            font: 700 14px 'Microsoft YaHei';
+            color: #ee8b12;
+          }
+        }
+      }
+      tr {
+        height: 50px;
+      }
+    }
+    .levelThree {
+      td {
+        width: 220px;
+        height: 50px;
+        text-align: center;
+        border: solid 1px #ccc;
+        font: 16px '微软雅黑';
+        color: #333333;
+      }
+      tr {
+        height: 50px;
+      }
+    }
+  }
+  .scoreTable {
+    margin: 0 auto;
+    thead {
+      tr th {
+        height: 50px;
+        text-align: center;
+        border-right: solid 1px #ccc;
+        border-top: solid 1px #ccc;
+        font: 16px '微软雅黑';
+        color: #333333;
+        font-weight: bolder;
+        .p1 {
+          height: 50px;
+          width: 660px;
+          line-height: 50px;
+          border-bottom: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          background-color: #F5F5F5;
+          > .subtext {
+            font: normal 16px "Microsoft YaHei";
+            color: #999;
+          }
+        }
+        .p2 {
+          height: 50px;
+          line-height: 50px;
+          border-left: 1px solid #ccc;
+          width: 660px;
+          > span {
+            display: inline-block;
+            background-color: #F5F5F5;
+            font-weight: normal;
+          }
+          > .frontSpan {
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            width: 33.4%;
+            border-right: 1px solid #ccc;
+          }
+          > .endSpan {
+            text-align: center;
+            line-height: 50px;
+            width: 33.2%;
+          }
+        }
+        .p3 {
+          width: 219px;
+          background-color: #F5F5F5;
+          height: 100px;
+          line-height: 100px;
+        }
+      }
+    }
+  }
+}

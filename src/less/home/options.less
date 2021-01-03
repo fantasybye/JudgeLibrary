@@ -1,0 +1,321 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  .statistic_div {
+    width: 998px;
+    height: 507px;
+    margin: 0 auto;
+    margin-top: 72px;
+    //border: solid 1px salmon;
+    .choose_div {
+      height: 53px;
+      width: 100%;
+      .chart_choose {
+        height: 53px;
+        width: 198px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        font: 18px '微软雅黑';
+        line-height: 53px;
+        color: #000000;
+        background-color: #ffffff;
+        filter: alpha(opacity=90);
+        -moz-opacity: 0.90;
+        opacity: 0.90;
+        img {
+          margin-right: 8px;
+        }
+        &.chosen {
+          background-color: #ffffff;
+          filter: alpha(opacity=70);
+          -moz-opacity: 0.70;
+          opacity: 0.70;
+        }
+      }
+      .separator {
+        float: left;
+        height: 53px;
+        width: 2px;
+        font: 18px '微软雅黑';
+        line-height: 53px;
+        color: #D6D6D6;
+        background-color: #ffffff;
+        filter: alpha(opacity=90);
+        -moz-opacity: 0.90;
+        opacity: 0.90;
+      }
+    }
+    .chart_div {
+      height: 454px;
+      width: 100%;
+      border-top: solid 1px #D6D6D6;
+      background-color: #ffffff;
+      filter: alpha(opacity=90);
+      -moz-opacity: 0.90;
+      opacity: 0.90;
+      > .chart {
+        height: 454px;
+        width: 100%;
+        &.recommend_navi {
+          > .box {
+            height: 341px;
+            width: 933px;
+            margin: 0 auto;
+            margin-top: 48px;
+            overflow: hidden;
+            .judges {
+              height: 341px;
+              width: 933*5px;
+              position: relative;
+              .judge {
+                width: 197px;
+                height: 300px;
+                margin-right: 18px;
+                margin-left: 18px;
+                float: left;
+                margin-bottom: 30px;
+                .member-info:hover{
+                  cursor: pointer;
+                }
+                h3 {
+                  text-align: center;
+                  color: #111111;
+                  font: 22px '微软雅黑';
+                  line-height: 22px;
+                  padding: 0;
+                  margin: 24px 0 15px 0;
+                }
+                h5 {
+                  text-align: center;
+                  color: #6B6B6B;
+                  font: 14px '微软雅黑';
+                  line-height: 14px;
+                  padding: 0;
+                  margin: 5px 0 5px 0;
+                  img {
+                    margin-right: 10px;
+                  }
+                  >span{
+                    position: relative;
+                    bottom: 2px;
+                  }
+                }
+                .star {
+                  text-align: center;
+                  margin-top: 10px;
+                  img {
+                    margin: 0 5px;
+                  }
+                }
+                .member-image {
+                  position: absolute;
+                  transition: 0.4s;
+                  img {
+                    width: 143px;
+                    height: 143px;
+                    margin: 14px 0 0 30px;
+                  }
+                }
+                .more-info {
+                  height: 0;
+                  transition: 0.4s;
+                  overflow: hidden;
+                  z-index: 9;
+                  position: relative;
+                  background-color: #ffffff;
+                  .info, .go_detail {
+                    text-align: center;
+                    font: 16px '微软雅黑';
+                    line-height: 17px;
+                    margin-top: 25px;
+                    span {
+                      color: #6B6B6B;
+                    }
+                    .value {
+                      color: #ED8A19;
+                    }
+                  }
+                  .go_btn {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 91px;
+                    background: url("../../assets/home/options/judge_icon_go_normal.png") no-repeat;
+                    &:hover {
+                      background: url("../../assets/home/options/judge_icon_go_choose.png") no-repeat;
+                      cursor: pointer;
+                    }
+                    .judge_icon_go_normal {
+                      display: block;
+                    }
+                    .judge_icon_go_choose {
+                      display: none;
+                    }
+                  }
+                  .go_btn:hover {
+                    .judge_icon_go_normal {
+                      display: none;
+                    }
+                    .judge_icon_go_choose {
+                      text-align: center;
+                      display: block;
+                      cursor: pointer;
+                    }
+                  }
+                }
+                &:hover {
+                  box-shadow: 5px 8px 8px silver;
+                  .more-info {
+                    height: 163px;
+                    transition: 0.4s;
+                  }
+                }
+              }
+            }
+          }
+          .move_recommend {
+            height: 15px;
+            width: 150px;
+            margin: 0 auto;
+            span {
+              font-size: 20px;
+              cursor: pointer;
+              color: #D9D9D9;
+              margin: 0 5px;
+              &.chosen {
+                color: #758869;
+              }
+            }
+          }
+        }
+        &.comment_navi {
+          .comment_chart {
+            width: 548px;
+            height: 454px;
+            float: left;
+          }
+          .comment_data {
+            width: 450px;
+            height: 100%;
+            float: left;
+            padding-top: 40px;
+            li {
+              margin: 35px 0 0 20px;
+              span {
+                font: 18px '微软雅黑';
+                color: #6B6B6B;
+                &.flag {
+                  font-size: 25px;
+                  color: #ED8A19;
+                  margin-right: 18px;
+                }
+                &.data {
+                  font-size: 30px;
+                  color: #ED8A19;
+                  margin-left: 30px;
+                  margin-right: 10px;
+                }
+                &.unit {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        &.avg_navi {
+          .avg_chart {
+            width: 800px;
+            height: 300px;
+            margin-left: 100px;
+            margin-top: 50px;
+          }
+          .avg_data {
+            font: 18px '微软雅黑';
+            color: #6B6B6B;
+            margin-left: 100px;
+            margin-top: 20px;
+            .flag {
+              font-size: 25px;
+              color: #ED8A19;
+              margin-right: 18px;
+            }
+          }
+        }
+        &.map_navi {
+          .map_chart {
+            width: 550px;
+            height: 454px;
+            float: left;
+            padding: 10px 0 0 50px;
+            .loading {
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              padding-top: 30%;
+              padding-left: 45%;
+              font-size: 30px;
+            }
+          }
+          .map_data {
+            width: 400px;
+            height: 100%;
+            float: left;
+            padding-top: 10px;
+            .province {
+              margin-top: 120px;
+            }
+            li {
+              margin: 15px 0 25px 10px;
+              span {
+                font: 18px '微软雅黑';
+                color: #6B6B6B;
+                &.flag {
+                  font-size: 25px;
+                  color: #ED8A19;
+                  margin-right: 18px;
+                }
+                &.data {
+                  font-size: 30px;
+                  color: #ED8A19;
+                  margin-left: 30px;
+                  margin-right: 8px;
+                  position: relative;
+                  top: 2px;
+                }
+                .city {
+                  color: #ED8A19;
+                }
+              }
+              p{
+                margin: 10px 0 0 33px;
+                span {
+                  font-size: 16px;
+                  color: #999999;
+                  margin-right: 15px;
+                  &.detail {
+                    font-size: 20px;
+                    color: #769376;
+                    margin-left: -5px;
+                    margin-right: 8px;
+                    display: inline-block;
+                    width: 20px;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.judge_navi {
+          .avg_chart {
+            width: 800px;
+            height: 300px;
+            margin-left: 100px;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}

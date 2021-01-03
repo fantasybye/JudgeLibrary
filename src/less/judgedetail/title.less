@@ -1,0 +1,129 @@
+.detail_info{
+  width: 1238px;
+  margin-left: 33px;
+  height: 170px;margin-top: 30px;
+  >div{
+    height: 163px;
+    .portrait{
+      width: 231px;
+      height: 152px;
+      padding-top: 18px;
+      padding-left: 52px;
+      float: left;
+      img{
+        width: 102px;
+        height: 134px;
+      }
+    }
+    >.infos{
+      width: 800px; height: 152px;float: left;
+      >.base_info{
+        padding-left: 9px;
+        padding-top: 26px;
+        .name{
+          font: 30px 'SimHei';
+          color: #28567A;}
+        .sex{
+          font: 16px 'SimHei';
+          color: #28567A;
+          margin-left: 22px}
+      }
+      >.more_info{
+        height: 37px;
+        padding-left: 9px;
+        margin-top: 19px;
+        .star_question{
+          .star{
+            float: left;
+            img{
+              margin-right: 12px;
+            }
+          }
+          float: left;
+          position: relative;
+          .question{
+            cursor: pointer;
+            position: relative;
+            bottom: 2px;}
+          &:hover{
+            .show_star_question {
+              display: block;
+              z-index: 999;
+            }
+          }
+          .show_star_question{
+            width: 296px;
+            height: 164px;
+            position: absolute;
+            margin-left: -120px;
+            display: none;
+            background: url(../../assets/judgedetail/question_border.png) no-repeat;
+            .question_description{
+              font: 16px '微软雅黑';
+              color: #333333;
+              width: 257px;
+              height: 73px;
+              margin-left: 17px;
+              margin-top: 30px;
+              line-height: 25px;
+            }
+            #open_star_detail{
+              width: 83px;
+              height: 30px;
+              margin: 15px 0 0 100px;
+              background-color: #ED8A19;
+              border-radius: 3px;
+              font: 14px '微软雅黑';
+              color: #FFFFFF;
+              line-height: 30px;
+              padding-left: 13px;
+              cursor: pointer;
+              a{
+                color: #fff;
+              }
+            }
+          }
+        }
+        .workload{
+          float: left;
+          position: relative;
+          bottom: 4px;
+          &:hover{
+            cursor: pointer;
+            .star_question.show_star_question {
+              display: block;
+              z-index: 999;
+            }
+          }
+          span{
+            font: 16px '微软雅黑';
+            color: #8D8D8D;
+          }
+          .divide{
+            margin: 0 21px;
+            font-size: 18px;
+          }
+          .num{
+            font: 22px 'SimHei';
+            color: #ED8A19;
+            margin-right: 9px;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+      >.location,>.phone_number{
+        height: 37px;
+        padding-left: 9px;
+        font: 16px '微软雅黑';
+        color: #8D8D8D;
+        img{
+          position: relative;
+          top: 2px;
+          margin-right: 15px;
+        }
+        .divide{margin: 0 21px;}
+      }
+    }
+  }
+}

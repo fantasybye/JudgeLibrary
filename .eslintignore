@@ -1,0 +1,10 @@
+/dist/
+/node_modules/
+/static/
+utils.js
+/directives/
+/commons/
+json2.js
+jquery.min.js
+
+

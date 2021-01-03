@@ -1,0 +1,106 @@
+#main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent url(../../assets/login/login_background.png) no-repeat;
+  overflow: auto;
+}
+#warning {
+  position: absolute;
+  left: 1169px;
+  top: 271px;
+  >span {
+    position: relative;
+    bottom: 4px;
+    font-size: 14px;
+    color: #f95e08;
+  }
+}
+#username_icon {
+  position: absolute;
+  left: 1015px;
+  top: 336px;
+  background-image: url(../../assets/login/username.png); /*引入图片图片*/
+}
+#password_icon {
+  position: absolute;
+  left: 1017px;
+  top: 399px;
+  background-image: url(../../assets/login/password.png); /*引入图片图片*/
+}
+.icon_user{
+  z-index:5;
+  background: 0 0 no-repeat; /*图片显示的位置*/
+  width: 20px; /*设置图片显示的宽*/
+  height: 22px; /*图片显示的高*/
+}
+#username {
+  position: absolute;
+  left: 1005px;
+  top: 323px;
+}
+#password {
+  position: absolute;
+  left: 1005px;
+  top: 387px;
+}
+.login_input {
+  background-color: transparent;
+  border: 1px solid #e4e4e4;
+  width: 315px;
+  *width: 280px;
+  height: 45px;
+  *height: 35px;
+  line-height: 45px;
+  *padding-top: 16px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #c8c8c8;
+  padding-left: 35px;
+  &:focus {
+    border: 1px solid #7a987d;
+    outline: none;
+  }
+}
+#login_checkbox {
+  position: absolute;
+  left: 1005px;
+  top: 454px;
+  &:focus {
+    outline: none;
+  }
+}
+.checkbox_intro {
+  position: absolute;
+  left: 1025px;
+  top: 450px;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+#login_btn {
+  position: absolute;
+  left: 1005px;
+  top:490px;
+  width: 315px;
+  height: 44px;
+  border: none;
+  background: transparent url(../../assets/login/login_btn.png) no-repeat center;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    outline: none;
+    cursor: pointer;
+    background-color: #fb8747;
+  }
+}
+.miitbeian {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+}

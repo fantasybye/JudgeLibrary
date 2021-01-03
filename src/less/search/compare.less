@@ -1,0 +1,54 @@
+#compare_list{
+  border: solid 1px #EAEAEA;width: 138px;
+  font: 16px '微软雅黑';
+  .list-head{
+    height: 40px;
+    color: #111111;
+    font: 16px '微软雅黑';
+    border-bottom: solid 1px #C7C7C7;
+    img{
+      width: 17px;
+      height: 12px;
+      margin: 13px 11px 14px 12px;
+      vertical-align:middle;
+    }
+  }
+  .list-item{
+    height: 40px;
+    position: relative;
+    line-height: 40px;
+    color: #6A6A6A;
+    &:nth-child(2n){background-color: #FFFFFF}
+    &:nth-child(2n+1){background-color: #F7F7F7}
+    .name{
+      position: absolute;
+      left: 20px;
+      &:hover{
+        cursor: default;
+      }
+    }
+    .delete{
+      font-weight: bold;
+      padding: 4px;
+      margin-top: -4px;
+      position: absolute;
+      right: 10px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+#compare_btn{
+  background-color: #6BA455;
+  color: #FFFFFF;
+  height: 32px;
+  font: 14px '微软雅黑';
+  line-height: 32px;
+  text-align: center;
+  border-radius: 2px;
+  a{
+    color: #fff;
+    display: block;
+  }
+}

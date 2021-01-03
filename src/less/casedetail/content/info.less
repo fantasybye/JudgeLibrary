@@ -1,0 +1,77 @@
+.info_div {
+  width: 25%;
+  margin-top: 37px;
+  margin-left: 22px;
+  float: left;
+  .base_info_title {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 8px;
+    img {
+      margin: 8px 14px 0 5px;
+      float: left;
+    }
+    div {
+      font: 20px '微软雅黑';
+      color: #333333;
+      float: left;
+      line-height: 40px;
+    }
+  }
+  .base_info {
+    width: 100%;
+    height: 276px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    .litigant_title {
+      font: 18px '微软雅黑';
+      color: #108596;
+      padding: 22px 0 0 26px;
+    }
+    .party_info {
+      font: 16px '微软雅黑';
+      color: #535353;
+      line-height: 25px;
+      padding: 17px 0 0 27px;
+      .name{
+        margin-bottom: 10px;
+      }
+      .sex{
+        margin-bottom: 10px;
+      }
+    }
+    .description {
+      font: 16px '微软雅黑';
+      color: #535353;
+      line-height: 25px;
+      padding: 17px 10px 10px 27px;
+    }
+    .special_data {
+      font: 16px '微软雅黑';
+      color: #535353;
+      line-height: 25px;
+      padding: 5px 10px 10px 27px;
+    }
+  }
+  .tags{
+    margin-top: 10px;height: 400px;overflow-y: scroll;
+    .tag{
+      height: 36px;width: 358px;margin-bottom: 8px;background-color: #FFFFFF;cursor: pointer;color: #111111;
+      border-left: solid 3px #60BBC8;font: 16px '微软雅黑';line-height: 36px;
+      a{
+        color:#111;
+      }
+      .img{background: url(../../../assets/casedetail/icon_tag.png) no-repeat;float: left;height: 24px;width: 30px;margin: 8px 0 0
+      10px;}
+      .tag_name{
+        float: left;height: 36px;width: 300px;
+      }
+      //img{margin: 8px 14px 0 17px;float: left;}
+      &:hover,&.choosed{
+        background-color: #60BBC8;a{color: #FFFFFF;}
+        .img{background: url(../../../assets/casedetail/icon_tag_choose.png) no-repeat;float: left;height: 24px;width: 30px;margin:
+          8px 0 0 10px;}
+      }
+    }
+  }
+}

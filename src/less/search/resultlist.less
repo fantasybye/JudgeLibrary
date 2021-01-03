@@ -1,0 +1,60 @@
+.result_list {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 5px;
+  .sort_div {
+    margin-bottom: 24px;
+    height: 56px;
+    padding-top: 26px;
+    padding-left: 30px;
+    font: 16px '微软雅黑';
+    color: #6A6A6A;
+    border-bottom: #E1E1E1 1px solid;
+    box-sizing: border-box;
+    .sort_title {
+      float: left;
+    }
+    .sort_options {
+      float: left;
+      .sort_option {
+        margin-left: 20px;
+        margin-right: 5px;
+        float: left;
+        label {
+          font-weight: lighter;
+          cursor: pointer;
+          font-size: 16px;
+          &.checked {
+            font-weight: bold;
+            color: #5EA83B;
+          }
+        }
+      }
+    }
+    .total {
+      float: right;
+      margin-right: 50px;
+      font: 16px 'ArialMT';
+      color: #9B9B9B;
+      >.count {
+        color: #F4310C;
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+  .list_div{
+    width: 81%;
+    float: left;
+    margin-left: 2%;
+    .no_data{
+      height: 644px;font-size: 50px;padding-left: 350px;padding-top: 100px;
+    }
+    .loading{
+      height: 644px;font-size: 50px;padding-left: 450px;padding-top: 100px;
+    }
+  }
+  .compare_div{
+    float: right;
+    margin: 0 4% 0 -4%;
+  }
+}
